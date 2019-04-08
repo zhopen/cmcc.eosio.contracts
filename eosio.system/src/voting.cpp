@@ -18,6 +18,8 @@
 #include <algorithm>
 #include <cmath>
 
+#define MAX_BLOCK_PRODUCER_NUM 7
+
 namespace eosiosystem {
    using eosio::indexed_by;
    using eosio::const_mem_fun;
@@ -93,9 +95,9 @@ namespace eosiosystem {
       auto idx = _producers.get_index<"prototalvote"_n>();
 
       std::vector< std::pair<eosio::producer_key,uint16_t> > top_producers;
-      top_producers.reserve(21);
+      top_producers.reserve( MAX_BLOCK_PRODUCER_NUM );
 
-      for ( auto it = idx.cbegin(); it != idx.cend() && top_producers.size() < 21 && 0 < it->total_votes && it->active(); ++it ) {
+      for ( auto it = idx.cbegin(); it != idx.cend() && top_producers.size() < MAX_BLOCK_PRODUCER_NUM && 0 < it->total_votes && it->active(); ++it ) {
          top_producers.emplace_back( std::pair<eosio::producer_key,uint16_t>({{it->owner, it->producer_key}, it->location}) );
       }
 
