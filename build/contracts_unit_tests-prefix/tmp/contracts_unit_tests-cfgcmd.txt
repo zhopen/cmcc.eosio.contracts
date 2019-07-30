@@ -1,0 +1,1 @@
+cmd='/usr/local/bin/cmake;-DCMAKE_BUILD_TYPE=;-DCMAKE_FRAMEWORK_PATH=;-DCMAKE_MODULE_PATH=/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/lib/cmake/eosio.cdt;-DEOSIO_ROOT=;-DLLVM_DIR=;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

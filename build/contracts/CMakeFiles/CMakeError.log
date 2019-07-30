@@ -1,0 +1,146 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/eosio-cc 
+Build flags: ;-O3;
+Id flags:  
+
+The output was:
+255
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/wasm-ld: error: cannot open /tmp/CMakeCCompilerId.c.o: No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/eosio-cpp 
+Build flags: ;-O3;
+Id flags:  
+
+The output was:
+255
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/wasm-ld: error: duplicate symbol: main(int, char**)
+>>> defined in /tmp/CMakeCXXCompilerId.cpp.o
+>>> defined in /tmp/CMakeCXXCompilerId.cpp.o
+
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/wasm-ld: error: duplicate symbol: info_platform
+>>> defined in /tmp/CMakeCXXCompilerId.cpp.o
+>>> defined in /tmp/CMakeCXXCompilerId.cpp.o
+
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/wasm-ld: error: duplicate symbol: info_compiler
+>>> defined in /tmp/CMakeCXXCompilerId.cpp.o
+>>> defined in /tmp/CMakeCXXCompilerId.cpp.o
+
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/wasm-ld: error: duplicate symbol: info_language_dialect_default
+>>> defined in /tmp/CMakeCXXCompilerId.cpp.o
+>>> defined in /tmp/CMakeCXXCompilerId.cpp.o
+
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/wasm-ld: error: duplicate symbol: info_arch
+>>> defined in /tmp/CMakeCXXCompilerId.cpp.o
+>>> defined in /tmp/CMakeCXXCompilerId.cpp.o
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b1c18/fast 
+make[3]: Entering directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_b1c18.dir/build.make CMakeFiles/cmTC_b1c18.dir/build
+make[4]: Entering directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1c18.dir/CMakeCCompilerABI.c.obj
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/eosio-cc   -O3     -v -o CMakeFiles/cmTC_b1c18.dir/CMakeCCompilerABI.c.obj   -c /usr/local/share/cmake-3.14/Modules/CMakeCCompilerABI.c
+clang version 7.0.0 (https://github.com/eosio/clang.git 6b886302a11a8419b76e469794ff9d0c531a4b4b) (https://github.com/eosio/llvm 3c026f8b7813ad693749d3551353a554c5ca33e7)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.3.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.3.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Linking C executable cmTC_b1c18.wasm
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1c18.dir/link.txt --verbose=1
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/eosio-ld  -v CMakeFiles/cmTC_b1c18.dir/CMakeCCompilerABI.c.obj -o cmTC_b1c18.wasm 
+eosio-ld: Unknown command line argument '-v'.  Try: '/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/eosio-ld -help'
+eosio-ld: Did you mean '-L'?
+CMakeFiles/cmTC_b1c18.dir/build.make:86: recipe for target 'cmTC_b1c18.wasm' failed
+make[4]: *** [cmTC_b1c18.wasm] Error 1
+make[4]: Leaving directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_b1c18/fast' failed
+make[3]: *** [cmTC_b1c18/fast] Error 2
+make[3]: Leaving directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C [-std=c11] compiler features failed to compile with the following output:
+Change Dir: /mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6e86a/fast 
+make[3]: Entering directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_6e86a.dir/build.make CMakeFiles/cmTC_6e86a.dir/build
+make[4]: Entering directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6e86a.dir/feature_tests.c.obj
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/eosio-cc   -O3     -std=c11 -o CMakeFiles/cmTC_6e86a.dir/feature_tests.c.obj   -c /mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/feature_tests.c
+eosio-cc: Unknown command line argument '-std=c11'.  Try: '/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/eosio-cc -help'
+eosio-cc: Did you mean '-w=c11'?
+CMakeFiles/cmTC_6e86a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_6e86a.dir/feature_tests.c.obj' failed
+make[4]: *** [CMakeFiles/cmTC_6e86a.dir/feature_tests.c.obj] Error 1
+make[4]: Leaving directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_6e86a/fast' failed
+make[3]: *** [cmTC_6e86a/fast] Error 2
+make[3]: Leaving directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6cb84/fast 
+make[3]: Entering directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_6cb84.dir/build.make CMakeFiles/cmTC_6cb84.dir/build
+make[4]: Entering directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6cb84.dir/CMakeCXXCompilerABI.cpp.obj
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/eosio-cpp    -O3     -v -o CMakeFiles/cmTC_6cb84.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/local/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp
+clang version 7.0.0 (https://github.com/eosio/clang.git 6b886302a11a8419b76e469794ff9d0c531a4b4b) (https://github.com/eosio/llvm 3c026f8b7813ad693749d3551353a554c5ca33e7)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.3.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.3.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Linking CXX executable cmTC_6cb84.wasm
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cb84.dir/link.txt --verbose=1
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/eosio-ld  -v CMakeFiles/cmTC_6cb84.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6cb84.wasm 
+eosio-ld: Unknown command line argument '-v'.  Try: '/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/eosio-ld -help'
+eosio-ld: Did you mean '-L'?
+CMakeFiles/cmTC_6cb84.dir/build.make:86: recipe for target 'cmTC_6cb84.wasm' failed
+make[4]: *** [cmTC_6cb84.wasm] Error 1
+make[4]: Leaving directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_6cb84/fast' failed
+make[3]: *** [cmTC_6cb84/fast] Error 2
+make[3]: Leaving directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX [-std=c++2a] compiler features failed to compile with the following output:
+Change Dir: /mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_14ea3/fast 
+make[3]: Entering directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_14ea3.dir/build.make CMakeFiles/cmTC_14ea3.dir/build
+make[4]: Entering directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_14ea3.dir/feature_tests.cxx.obj
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/eosio-cpp    -O3     -std=c++2a -o CMakeFiles/cmTC_14ea3.dir/feature_tests.cxx.obj -c /mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_14ea3.wasm
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14ea3.dir/link.txt --verbose=1
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/eosio-ld   CMakeFiles/cmTC_14ea3.dir/feature_tests.cxx.obj -o cmTC_14ea3.wasm 
+/mnt/d/wzw/projects/eos/github.com.eosio/eosio.cdt/build/bin/wasm-ld: error: fatal failure: contract with no actions and trying to create dispatcher
+CMakeFiles/cmTC_14ea3.dir/build.make:86: recipe for target 'cmTC_14ea3.wasm' failed
+make[4]: *** [cmTC_14ea3.wasm] Error 255
+make[4]: Leaving directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_14ea3/fast' failed
+make[3]: *** [cmTC_14ea3/fast] Error 2
+make[3]: Leaving directory '/mnt/d/wzw/projects/cmcc.eosio.contracts/build/contracts/CMakeFiles/CMakeTmp'
+
+
+
