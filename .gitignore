@@ -6,9 +6,9 @@
 *.lo
 *.o
 *.obj
-*.abi
-*.wast
-*.wasm
+#*.abi
+#*.wast
+#*.wasm
 
 # Precompiled Headers
 *.gch
