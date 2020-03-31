@@ -323,7 +323,7 @@ namespace eosiosystem {
                             const name&       newact,
                             ignore<authority> owner,
                             ignore<authority> active ) {
-
+	  require_auth( _self );  //cmcc: only eosio account can create a new account。
       if( creator != get_self() ) {
          uint64_t tmp = newact.value >> 4;
          bool has_dot = false;

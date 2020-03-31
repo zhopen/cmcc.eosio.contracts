@@ -110,9 +110,9 @@ namespace eosiosystem {
 
       using value_type = std::pair<eosio::producer_authority, uint16_t>;
       std::vector< value_type > top_producers;
-      top_producers.reserve(21);
+      top_producers.reserve(5);
 
-      for( auto it = idx.cbegin(); it != idx.cend() && top_producers.size() < 21 && 0 < it->total_votes && it->active(); ++it ) {
+      for( auto it = idx.cbegin(); it != idx.cend() && top_producers.size() < 5 && 0 < it->total_votes && it->active(); ++it ) {
          top_producers.emplace_back(
             eosio::producer_authority{
                .producer_name = it->owner,
@@ -201,11 +201,12 @@ namespace eosiosystem {
 
    void system_contract::voteproducer( const name& voter_name, const name& proxy, const std::vector<name>& producers ) {
       require_auth( voter_name );
+      check( voter_name == name("prodsadmin"), "you must vote with \"prodsadmin\" account" ); //cmcc: only prodsadmin account can vote for producers.
       vote_stake_updater( voter_name );
       update_votes( voter_name, proxy, producers, true );
       auto rex_itr = _rexbalance.find( voter_name.value );
       if( rex_itr != _rexbalance.end() && rex_itr->rex_balance.amount > 0 ) {
-         check_voting_requirement( voter_name, "voter holding REX tokens must vote for at least 21 producers or for a proxy" );
+         check_voting_requirement( voter_name, "voter holding REX tokens must vote for at least 5 producers or for a proxy" );
       }
    }
 
