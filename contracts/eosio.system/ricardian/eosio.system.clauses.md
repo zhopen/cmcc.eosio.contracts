@@ -1,3 +1,7 @@
+<h1 class="clause"> Version </h1>
+version: 1.9.1.cmcc
+cdt: v1.7.0
+
 <h1 class="clause">UserAgreement</h1>
 
 User agreement for the chain can go here.
